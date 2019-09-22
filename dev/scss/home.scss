@@ -1,0 +1,114 @@
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0)
+    };
+    66% {
+        transform: translateY(-30px)
+    }
+}
+
+body.home {
+    .screen-one-def {
+        background-color: #000;
+        video {
+            width: auto;
+            height: 80vh;
+            object-fit: cover;
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .one-title {
+            position: absolute;
+            left: 12vw;
+            bottom: 21vh;
+            color: #fff;
+            p {
+                font-size: 65px;
+                font-weight: 600;
+                padding-bottom: 20px;
+                span {
+                    color: var(--yel);
+                }
+            }
+            h1 {
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 500;
+            }
+        }
+        .foot {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding-left: 100px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 100px;
+            bottom: 54px;
+            div {
+                flex: 1;
+            }
+            .side-left {
+                color: var(--yel);
+                font-size: 22px;
+            }
+            .side-middle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: scrollDown 2s infinite;
+                img {
+                    transform: rotate(90deg);
+                    width: 18px;
+                    height: 18px;
+                    // padding: 20px;
+                }
+            }
+            .side-right {
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                a {
+                    &:last-child {
+                        border: none!important;
+                    }
+                    display: block;
+                    border-right: 2px solid #595959;
+                    color: var(--passive);
+                    padding: 0 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .screen-about {
+        .sides {
+            display: flex;
+            justify-content: space-between;
+            .item {
+                padding-right: 60px;
+                flex:
+                &:last-child {
+                    padding-right: 0;
+                }
+                .title {
+                    font-size: 23px;
+                    font-weight: 500;
+                    padding-bottom: 41px;
+                    font-weight: 500;
+                    display: block;
+                    font-weight: 600;
+                }
+                p {
+                    color: #58585B;
+                }
+            }
+        }
+    }
+}

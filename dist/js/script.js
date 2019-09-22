@@ -1,0 +1,1 @@
+"use strict";body.classList.contains("home");
